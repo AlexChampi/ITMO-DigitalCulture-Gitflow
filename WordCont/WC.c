@@ -49,7 +49,7 @@ int main(int argc, char *argv[]) {
     } else {
         FILE *myFile;
         strcpy(fileName, argv[argc - 1]);
-        myFile = fopen(fileName, "r");
+        myFile = fopen(fileName, "rb");
         if (!myFile) {
             printf("Указанный файл не сущетсвует, введите полный путь к файлу");
         } else {
