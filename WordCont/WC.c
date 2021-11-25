@@ -8,14 +8,12 @@ int CountLine(FILE *file) {
     while (fgets(line, 100, file) != NULL) {
         lineCounter++;
     }
-    
     return lineCounter;
 }
 
 int CountByte(FILE *file) {
     fseek(file, 0, SEEK_END);
     long size = ftell(file);
-
     return size;
 }
 
