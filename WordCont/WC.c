@@ -14,7 +14,6 @@ int CountLine(FILE *file) {
 int CountByte(FILE *file) {
     fseek(file, 0, SEEK_END);
     long size = ftell(file);
-
     return size;
 }
 
