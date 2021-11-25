@@ -20,7 +20,7 @@ int CountByte(FILE *file) {
 
 int CountWord(FILE *file) {
     fseek(file, 0, 0);
-    int symbol, iSpace = 0;
+    int symbol, isSpace = 0;
     long counter = 0;
     while (!feof(file)) {
         symbol = fgetc(file);
