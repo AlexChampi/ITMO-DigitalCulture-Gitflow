@@ -8,6 +8,7 @@ int CountLine(FILE *file) {
     while (fgets(line, 100, file) != NULL) {
         lineCounter++;
     }
+    
     return lineCounter;
 }
 
